@@ -8,6 +8,7 @@ use soroban_sdk::{
     token, Bytes, BytesN, Env, String, Symbol, Vec,
 };
 
+mod mmr;
 mod state;
 
 #[cfg(kani)]
@@ -60,6 +61,21 @@ pub enum DataKey {
     Ownership(BytesN<32>),
     /// Admin-attested deployer of a target contract (claim fallback path).
     Deployer(BytesN<32>),
+    /// Storage schema version, bumped by `migrate`.
+    SchemaVersion,
+    /// Progress of the incremental `migrate` batches.
+    MigrationCursor,
+    /// Refundable registration deposit amount and its token.
+    RegistrationDepositAmount,
+    RegistrationDepositToken,
+    /// Recipient of forfeited registration deposits.
+    RegistrationTreasury,
+    /// Deposit held for a registered contract (see `DepositRecord`).
+    ContractDeposit(BytesN<32>),
+    /// Number of leaves appended to the event Merkle mountain range (see `mmr.rs`).
+    MmrLeafCount,
+    /// Peak hash of the MMR at the given height.
+    MmrPeak(u32),
 }
 
 #[allow(missing_docs)]

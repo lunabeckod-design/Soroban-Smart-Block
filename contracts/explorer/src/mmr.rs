@@ -1,4 +1,4 @@
-use soroban_sdk::{Bytes, BytesN, Env};
+use soroban_sdk::{xdr::ToXdr, Bytes, BytesN, Env};
 
 use crate::{DataKey, DecodedEvent};
 
@@ -15,10 +15,10 @@ pub fn event_leaf(env: &Env, event: &DecodedEvent) -> BytesN<32> {
     let mut bytes = Bytes::new(env);
     bytes.extend_from_slice(&event.seq.to_be_bytes());
     bytes.extend_from_slice(&event.contract_id.to_array());
-    let function = event.function.to_string().to_bytes();
+    let function = event.function.clone().to_xdr(env);
     bytes.append(&function);
     bytes.extend_from_slice(&event.ledger.to_be_bytes());
-    let description = event.description.to_bytes();
+    let description = event.description.clone().to_xdr(env);
     bytes.append(&description);
     bytes.append(&event.raw_data);
     env.crypto().sha256(&bytes).to_bytes()
