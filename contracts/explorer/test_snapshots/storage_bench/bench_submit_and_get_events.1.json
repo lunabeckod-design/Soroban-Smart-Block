@@ -1979,6 +1979,87 @@
                         "val": {
                           "u32": 50000
                         }
+                      },
+                      {
+                        "key": {
+                          "vec": [
+                            {
+                              "symbol": "MigrationCursor"
+                            }
+                          ]
+                        },
+                        "val": {
+                          "u32": 0
+                        }
+                      },
+                      {
+                        "key": {
+                          "vec": [
+                            {
+                              "symbol": "MmrLeafCount"
+                            }
+                          ]
+                        },
+                        "val": {
+                          "u64": 11
+                        }
+                      },
+                      {
+                        "key": {
+                          "vec": [
+                            {
+                              "symbol": "MmrPeak"
+                            },
+                            {
+                              "u32": 0
+                            }
+                          ]
+                        },
+                        "val": {
+                          "bytes": "b7a62914c68973ea8c9e1d32d789797fdaa6a68a6106616b16104f9f6b89fec7"
+                        }
+                      },
+                      {
+                        "key": {
+                          "vec": [
+                            {
+                              "symbol": "MmrPeak"
+                            },
+                            {
+                              "u32": 1
+                            }
+                          ]
+                        },
+                        "val": {
+                          "bytes": "c364d4f8318516b0ef2aa2ae1d50c3e381fa3c6c6687a9895add7f6a11251b57"
+                        }
+                      },
+                      {
+                        "key": {
+                          "vec": [
+                            {
+                              "symbol": "MmrPeak"
+                            },
+                            {
+                              "u32": 3
+                            }
+                          ]
+                        },
+                        "val": {
+                          "bytes": "557dd8616c891dc80ead63d6e90bd4355570913581efd744269ab46d5b02f760"
+                        }
+                      },
+                      {
+                        "key": {
+                          "vec": [
+                            {
+                              "symbol": "SchemaVersion"
+                            }
+                          ]
+                        },
+                        "val": {
+                          "u32": 1
+                        }
                       }
                     ]
                   }
@@ -2576,6 +2657,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "f3858871c4662311bedf3690adc7b2cc7b794f4129ee92538df2c9fc2bd43eb9"
+                },
+                {
+                  "u64": 1
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -2728,6 +2836,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "f701447c4d418ee3ce6acb2618fd6ebfc2abb6106404562c020d11bbee758170"
+                },
+                {
+                  "u64": 2
+                }
+              ]
             }
           }
         }
@@ -2900,6 +3035,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "83c85c107f875616ce6019ff99fec930367a7b837797d45e0989e5914d91ac91"
+                },
+                {
+                  "u64": 3
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -3052,6 +3214,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "72b2c1a995d3659b9f768b295fd4cc786ec1dee607effc4234403509b230ed8a"
+                },
+                {
+                  "u64": 4
+                }
+              ]
             }
           }
         }
@@ -3224,6 +3413,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "070905d93a3debf5b74a14637a46dd323cc4e5974041ef1d79f178ff08155219"
+                },
+                {
+                  "u64": 5
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -3376,6 +3592,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "1f1c90a5aa31a004bff7c92e8147387e402b377f4a230044e59887ee7f7c6c1e"
+                },
+                {
+                  "u64": 6
+                }
+              ]
             }
           }
         }
@@ -3548,6 +3791,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "8144b627e382c882b274bac8d5805a7b069556589a3a682de910a2d771039c74"
+                },
+                {
+                  "u64": 7
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -3700,6 +3970,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "557dd8616c891dc80ead63d6e90bd4355570913581efd744269ab46d5b02f760"
+                },
+                {
+                  "u64": 8
+                }
+              ]
             }
           }
         }
@@ -3872,6 +4169,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "276810aacda6f2266ff7a5ec8b3b0a1ed4d50a5008543cd97a045a9e053297e5"
+                },
+                {
+                  "u64": 9
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -4034,6 +4358,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "16b57262e2eb4be85c4286d6a9f54ed33600246b5d6d8a9b691e50db52e9eefa"
+                },
+                {
+                  "u64": 10
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -4186,6 +4537,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "617278024a2e2e8f83c7b1be429ab2c3273942b58aea0e64cbf9621615177426"
+                },
+                {
+                  "u64": 11
+                }
+              ]
             }
           }
         }

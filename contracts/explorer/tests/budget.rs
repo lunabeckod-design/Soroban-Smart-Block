@@ -10,7 +10,7 @@
 //! budget model does not depend on wall-clock time or build profile.
 
 use soroban_explorer_contract::{
-    ContractMeta, EventInput, ExplorerContract, ExplorerContractClient,
+    ContractMeta, EventInput, ExplorerContract, ExplorerContractClient, Role,
 };
 use soroban_sdk::{
     symbol_short,
@@ -211,6 +211,98 @@ fn measure_all() -> BTreeMap<&'static str, Cost> {
         }),
     );
 
+    let (env, client, admin) = setup();
+    let token = Address::generate(&env);
+    out.insert(
+        "set_registration_deposit",
+        measure(&env, || {
+            client.set_registration_deposit(&admin, &100i128, &token)
+        }),
+    );
+
+    let (env, client, admin) = setup();
+    let treasury = Address::generate(&env);
+    out.insert(
+        "set_registration_treasury",
+        measure(&env, || client.set_registration_treasury(&admin, &treasury)),
+    );
+
+    let (env, client, _admin) = setup();
+    out.insert(
+        "deposit_of",
+        measure(&env, || {
+            client.deposit_of(&cid(&env));
+        }),
+    );
+
+    let (env, client, _admin) = setup();
+    out.insert(
+        "schema_version",
+        measure(&env, || {
+            client.schema_version();
+        }),
+    );
+
+    let (env, client, admin) = setup();
+    out.insert(
+        "migrate",
+        measure(&env, || client.migrate(&admin, &1u32, &2u32, &10u32)),
+    );
+
+    let (env, client, admin) = setup();
+    let moderator = Address::generate(&env);
+    out.insert(
+        "grant_role",
+        measure(&env, || {
+            client.grant_role(&admin, &moderator, &Role::Moderator)
+        }),
+    );
+
+    let (env, client, admin) = setup();
+    let moderator = Address::generate(&env);
+    client.grant_role(&admin, &moderator, &Role::Moderator);
+    out.insert(
+        "revoke_role",
+        measure(&env, || client.revoke_role(&admin, &moderator)),
+    );
+
+    let (env, client, admin) = setup();
+    let moderator = Address::generate(&env);
+    client.grant_role(&admin, &moderator, &Role::Moderator);
+    out.insert(
+        "get_role",
+        measure(&env, || {
+            client.get_role(&moderator);
+        }),
+    );
+
+    let (env, client, admin) = setup();
+    let id = cid(&env);
+    client.register_contract(&admin, &id, &meta(&env, &admin, 0));
+    out.insert(
+        "bump_contract_version_ttl",
+        measure(&env, || {
+            client.bump_contract_version_ttl(&id, &0u32);
+        }),
+    );
+
+    let (env, client, admin) = setup();
+    client.submit_event(&admin, &input(&env));
+    out.insert(
+        "bump_event_ttl",
+        measure(&env, || {
+            client.bump_event_ttl(&0u64);
+        }),
+    );
+
+    let (env, client, _admin) = setup();
+    out.insert(
+        "get_root",
+        measure(&env, || {
+            client.get_root();
+        }),
+    );
+
     out
 }
 
@@ -219,6 +311,9 @@ fn measure_all() -> BTreeMap<&'static str, Cost> {
 fn spec_functions() -> std::vec::Vec<std::string::String> {
     let src = include_str!("../src/lib.rs");
     let body = src.split("// ── Tests").next().unwrap();
+    // Only the `#[contractimpl]` block is entrypoints; helper impls such as
+    // `StoredMeta::into_latest` are not contract functions.
+    let body = &body[body.find("#[contractimpl]").unwrap()..];
     let mut names = std::vec::Vec::new();
     for line in body.lines() {
         if let Some(rest) = line.strip_prefix("    pub fn ") {

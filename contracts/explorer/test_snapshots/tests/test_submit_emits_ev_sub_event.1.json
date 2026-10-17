@@ -247,6 +247,57 @@
                         "val": {
                           "u32": 50000
                         }
+                      },
+                      {
+                        "key": {
+                          "vec": [
+                            {
+                              "symbol": "MigrationCursor"
+                            }
+                          ]
+                        },
+                        "val": {
+                          "u32": 0
+                        }
+                      },
+                      {
+                        "key": {
+                          "vec": [
+                            {
+                              "symbol": "MmrLeafCount"
+                            }
+                          ]
+                        },
+                        "val": {
+                          "u64": 1
+                        }
+                      },
+                      {
+                        "key": {
+                          "vec": [
+                            {
+                              "symbol": "MmrPeak"
+                            },
+                            {
+                              "u32": 0
+                            }
+                          ]
+                        },
+                        "val": {
+                          "bytes": "a4daf5eaaf895a15b5d4da97399c1587c7c88407813a81b45957aeb21ad653c6"
+                        }
+                      },
+                      {
+                        "key": {
+                          "vec": [
+                            {
+                              "symbol": "SchemaVersion"
+                            }
+                          ]
+                        },
+                        "val": {
+                          "u32": 1
+                        }
                       }
                     ]
                   }
@@ -504,6 +555,33 @@
             ],
             "data": {
               "string": "test"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "a4daf5eaaf895a15b5d4da97399c1587c7c88407813a81b45957aeb21ad653c6"
+                },
+                {
+                  "u64": 1
+                }
+              ]
             }
           }
         }

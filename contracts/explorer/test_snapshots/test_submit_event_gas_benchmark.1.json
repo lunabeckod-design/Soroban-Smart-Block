@@ -247,6 +247,57 @@
                         "val": {
                           "u32": 50000
                         }
+                      },
+                      {
+                        "key": {
+                          "vec": [
+                            {
+                              "symbol": "MigrationCursor"
+                            }
+                          ]
+                        },
+                        "val": {
+                          "u32": 0
+                        }
+                      },
+                      {
+                        "key": {
+                          "vec": [
+                            {
+                              "symbol": "MmrLeafCount"
+                            }
+                          ]
+                        },
+                        "val": {
+                          "u64": 1
+                        }
+                      },
+                      {
+                        "key": {
+                          "vec": [
+                            {
+                              "symbol": "MmrPeak"
+                            },
+                            {
+                              "u32": 0
+                            }
+                          ]
+                        },
+                        "val": {
+                          "bytes": "3393b04cf836e4911fce937c3daa60673b210be591e042c0ec1586a3930946bb"
+                        }
+                      },
+                      {
+                        "key": {
+                          "vec": [
+                            {
+                              "symbol": "SchemaVersion"
+                            }
+                          ]
+                        },
+                        "val": {
+                          "u32": 1
+                        }
                       }
                     ]
                   }
@@ -504,6 +555,33 @@
             ],
             "data": {
               "string": "Benchmarking gas usage"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "3393b04cf836e4911fce937c3daa60673b210be591e042c0ec1586a3930946bb"
+                },
+                {
+                  "u64": 1
+                }
+              ]
             }
           }
         }

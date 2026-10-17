@@ -34849,6 +34849,102 @@
                         "val": {
                           "u32": 50000
                         }
+                      },
+                      {
+                        "key": {
+                          "vec": [
+                            {
+                              "symbol": "MigrationCursor"
+                            }
+                          ]
+                        },
+                        "val": {
+                          "u32": 0
+                        }
+                      },
+                      {
+                        "key": {
+                          "vec": [
+                            {
+                              "symbol": "MmrLeafCount"
+                            }
+                          ]
+                        },
+                        "val": {
+                          "u64": 201
+                        }
+                      },
+                      {
+                        "key": {
+                          "vec": [
+                            {
+                              "symbol": "MmrPeak"
+                            },
+                            {
+                              "u32": 0
+                            }
+                          ]
+                        },
+                        "val": {
+                          "bytes": "330366dab7e713e8a469e46f3d22677448cf07053c4ed8a10cae43a5fc47e9ec"
+                        }
+                      },
+                      {
+                        "key": {
+                          "vec": [
+                            {
+                              "symbol": "MmrPeak"
+                            },
+                            {
+                              "u32": 3
+                            }
+                          ]
+                        },
+                        "val": {
+                          "bytes": "9aad8f44cf654b3a0df88401ef20dc2b4a5fd9df2ddd71006fdb315b73b7d0e6"
+                        }
+                      },
+                      {
+                        "key": {
+                          "vec": [
+                            {
+                              "symbol": "MmrPeak"
+                            },
+                            {
+                              "u32": 6
+                            }
+                          ]
+                        },
+                        "val": {
+                          "bytes": "f5e341e069cc0ffbb35bfa4282f8619c7cf829576bc8ae21f05e3074774a9f42"
+                        }
+                      },
+                      {
+                        "key": {
+                          "vec": [
+                            {
+                              "symbol": "MmrPeak"
+                            },
+                            {
+                              "u32": 7
+                            }
+                          ]
+                        },
+                        "val": {
+                          "bytes": "1f8d8f496722e34d7f200e3792e24695e5e82a2dec4ead8b4b54e91edae83f7f"
+                        }
+                      },
+                      {
+                        "key": {
+                          "vec": [
+                            {
+                              "symbol": "SchemaVersion"
+                            }
+                          ]
+                        },
+                        "val": {
+                          "u32": 1
+                        }
                       }
                     ]
                   }
@@ -41716,6 +41812,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "f3858871c4662311bedf3690adc7b2cc7b794f4129ee92538df2c9fc2bd43eb9"
+                },
+                {
+                  "u64": 1
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -41868,6 +41991,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "f701447c4d418ee3ce6acb2618fd6ebfc2abb6106404562c020d11bbee758170"
+                },
+                {
+                  "u64": 2
+                }
+              ]
             }
           }
         }
@@ -42040,6 +42190,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "83c85c107f875616ce6019ff99fec930367a7b837797d45e0989e5914d91ac91"
+                },
+                {
+                  "u64": 3
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -42192,6 +42369,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "72b2c1a995d3659b9f768b295fd4cc786ec1dee607effc4234403509b230ed8a"
+                },
+                {
+                  "u64": 4
+                }
+              ]
             }
           }
         }
@@ -42364,6 +42568,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "070905d93a3debf5b74a14637a46dd323cc4e5974041ef1d79f178ff08155219"
+                },
+                {
+                  "u64": 5
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -42516,6 +42747,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "1f1c90a5aa31a004bff7c92e8147387e402b377f4a230044e59887ee7f7c6c1e"
+                },
+                {
+                  "u64": 6
+                }
+              ]
             }
           }
         }
@@ -42688,6 +42946,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "8144b627e382c882b274bac8d5805a7b069556589a3a682de910a2d771039c74"
+                },
+                {
+                  "u64": 7
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -42840,6 +43125,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "557dd8616c891dc80ead63d6e90bd4355570913581efd744269ab46d5b02f760"
+                },
+                {
+                  "u64": 8
+                }
+              ]
             }
           }
         }
@@ -43012,6 +43324,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "276810aacda6f2266ff7a5ec8b3b0a1ed4d50a5008543cd97a045a9e053297e5"
+                },
+                {
+                  "u64": 9
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -43164,6 +43503,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "16b57262e2eb4be85c4286d6a9f54ed33600246b5d6d8a9b691e50db52e9eefa"
+                },
+                {
+                  "u64": 10
+                }
+              ]
             }
           }
         }
@@ -43336,6 +43702,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "617278024a2e2e8f83c7b1be429ab2c3273942b58aea0e64cbf9621615177426"
+                },
+                {
+                  "u64": 11
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -43488,6 +43881,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "3af8fda2b3e736446e033c678d70d9f4786bc0598264989059c5f03a98876750"
+                },
+                {
+                  "u64": 12
+                }
+              ]
             }
           }
         }
@@ -43660,6 +44080,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "1797619b9f2155cd60a39ee137822f899a838b65d94d3458312c17bd299d18bd"
+                },
+                {
+                  "u64": 13
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -43812,6 +44259,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "a427fd852f3159547d21fa792ecfe582e45821f73fa8ace127ad181f561de2a5"
+                },
+                {
+                  "u64": 14
+                }
+              ]
             }
           }
         }
@@ -43984,6 +44458,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "c2cca6c6ef78ecacb73476f3d0f4caa20a1187daaca766fe9d640c2fb114f901"
+                },
+                {
+                  "u64": 15
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -44136,6 +44637,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "b11cf425a1a01d1db858287f9761d4d35ea0d97b48a06956728df93d3c31d0f4"
+                },
+                {
+                  "u64": 16
+                }
+              ]
             }
           }
         }
@@ -44308,6 +44836,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "602703afc87f5cd48233c04895ae7dfbd3452378b8a8d6a915773c68d275a981"
+                },
+                {
+                  "u64": 17
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -44460,6 +45015,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "41690ecf6e5e9fb3a58186d920625b0816477b4dc8e22bd13b9be4a68e0753a8"
+                },
+                {
+                  "u64": 18
+                }
+              ]
             }
           }
         }
@@ -44632,6 +45214,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "73697fb4ea3b5136ff9f770393ecb07f559fd0c51fb2c518652fa081a35efb31"
+                },
+                {
+                  "u64": 19
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -44784,6 +45393,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "eaebaa53fe42bebdf500fae2d607090fc83b576f9c2d3c86358ddc4e323a71fa"
+                },
+                {
+                  "u64": 20
+                }
+              ]
             }
           }
         }
@@ -44956,6 +45592,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "a5486943ab97140b8d295c94f1a6bef6be5e8977d03af4579501866f5553bcad"
+                },
+                {
+                  "u64": 21
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -45108,6 +45771,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "d583d16e49484f3cd728cd0425e59bfa414dd25b5e902ac3c395f6cafdf66fbf"
+                },
+                {
+                  "u64": 22
+                }
+              ]
             }
           }
         }
@@ -45280,6 +45970,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "f7c8aa9dc2e4afbadc71b277ac230d1963db6257202997952aa4eeeaa0afdff2"
+                },
+                {
+                  "u64": 23
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -45432,6 +46149,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "267039d01ce4903cb54a65b486bc513afac31432a5d7814bde772f54076facfd"
+                },
+                {
+                  "u64": 24
+                }
+              ]
             }
           }
         }
@@ -45604,6 +46348,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "b2d6cf73b8912013600d91594d39fe35f6946b02046488148ccc31b9b9224bcd"
+                },
+                {
+                  "u64": 25
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -45756,6 +46527,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "0f6d150b2a670359611aa4964844ac8de7da20928d6a9a89cf3f2b5db5225149"
+                },
+                {
+                  "u64": 26
+                }
+              ]
             }
           }
         }
@@ -45928,6 +46726,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "9710874e659c47173e27263de822737a9b0773aa1ea162be8c518e525acc0c14"
+                },
+                {
+                  "u64": 27
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -46080,6 +46905,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "e7788e6e083cbf81194ce8a45d502e504c2b96b3d112c3c735a7f887e0251115"
+                },
+                {
+                  "u64": 28
+                }
+              ]
             }
           }
         }
@@ -46252,6 +47104,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "b0ed7350bec90c74c00d8f4b10003badc8782be297bb98744fe228820c9ba111"
+                },
+                {
+                  "u64": 29
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -46404,6 +47283,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "d341345b9f511b6e2db0003daf894ea68e4ac53b9ddd52760eef26a289d77dcb"
+                },
+                {
+                  "u64": 30
+                }
+              ]
             }
           }
         }
@@ -46576,6 +47482,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "eead7aa64a982908918f429def83988d0958a6b2e7f60683e819cfc9ffa06294"
+                },
+                {
+                  "u64": 31
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -46728,6 +47661,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "cf35679025226d97338dc5df81e1bd52a1c31c12a84db59f94464aeffa32db8c"
+                },
+                {
+                  "u64": 32
+                }
+              ]
             }
           }
         }
@@ -46900,6 +47860,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "ab3a82dfdd6dd5b6714895756068961d590b71728c39c156ef8be8a2db889362"
+                },
+                {
+                  "u64": 33
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -47052,6 +48039,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "46f2cb96635690d64f6680e81a98139483ce85935d842921d1fe9c4b22badc59"
+                },
+                {
+                  "u64": 34
+                }
+              ]
             }
           }
         }
@@ -47224,6 +48238,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "b9bd9adc2b9dcace3aea2aac84c6a9005aeb12ca3461f1c10d6df6f157b4030a"
+                },
+                {
+                  "u64": 35
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -47376,6 +48417,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "8c69a0d1cc3475fc3d1725b757da157154a0215baf3dd7691c106ae62f68b10c"
+                },
+                {
+                  "u64": 36
+                }
+              ]
             }
           }
         }
@@ -47548,6 +48616,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "dd0cd0ab4f25c0a1707b2454a24ceb4a29681fa92f318ae20680f64660339116"
+                },
+                {
+                  "u64": 37
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -47700,6 +48795,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "bbbd57207875755e6ace6fc39f9aef42320d7ed014bedadf73e6d7d64ce83288"
+                },
+                {
+                  "u64": 38
+                }
+              ]
             }
           }
         }
@@ -47872,6 +48994,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "d1422dd5c6c3a9760b376a5da155b00437172757f5a2748b2e9ea877a4d1b814"
+                },
+                {
+                  "u64": 39
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -48024,6 +49173,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "400f1f1fffdd5cc2d3913c6b6debccb2448c3ddedee0ef5d8b22423e1ba4f7e4"
+                },
+                {
+                  "u64": 40
+                }
+              ]
             }
           }
         }
@@ -48196,6 +49372,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "443b4117d161ef35f18213a2e2131e67c32b833b9d3a0dc83811b84818f656e5"
+                },
+                {
+                  "u64": 41
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -48348,6 +49551,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "0162a4ee94cd2ce306139f1f25cb6b194a5f3b3431bc15e509648b01f7ec9231"
+                },
+                {
+                  "u64": 42
+                }
+              ]
             }
           }
         }
@@ -48520,6 +49750,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "edbf24df6d1fa535c50e15b4278bc2d6733a7cfcb1836c4245d8f1bddeab41b1"
+                },
+                {
+                  "u64": 43
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -48672,6 +49929,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "2c2054968549fe38bcf8eef5e69eac29d6691e5923818bdca1040d7d3948e25b"
+                },
+                {
+                  "u64": 44
+                }
+              ]
             }
           }
         }
@@ -48844,6 +50128,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "41d3a7dd0d7debe45e64338436a5ad20adc31a424a557c451b6e735a931d368a"
+                },
+                {
+                  "u64": 45
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -48996,6 +50307,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "5421935b74ef0bb8871ca793714281686baad29e8da5087b708e589e6e576e53"
+                },
+                {
+                  "u64": 46
+                }
+              ]
             }
           }
         }
@@ -49168,6 +50506,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "ba3a899c5643d3c00703db9c28c4ad234f6e9c8936f688219b1a7f4b7e8b718b"
+                },
+                {
+                  "u64": 47
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -49320,6 +50685,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "45d1d546f2c4af711c9a59fa381ff937373fd9ce65d6d336557e1933bd630839"
+                },
+                {
+                  "u64": 48
+                }
+              ]
             }
           }
         }
@@ -49492,6 +50884,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "619b071a91a648c76dd25c9b5bdabb998f25a0e3e90d7f7e474588760d0d2473"
+                },
+                {
+                  "u64": 49
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -49644,6 +51063,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "255dbc64969e164ee5fce7c00f0d72b97123f97bb28c4c63d997b7d5f1431665"
+                },
+                {
+                  "u64": 50
+                }
+              ]
             }
           }
         }
@@ -49816,6 +51262,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "1eb9b3534c8eb5e48ed9898504497c3fd09061e556ea3c7108a7a6e1229bd0e7"
+                },
+                {
+                  "u64": 51
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -49968,6 +51441,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "6dace3bd608e018c16a2ff1c23274e55a94a761ff75e015d66721e2a20f0e1b0"
+                },
+                {
+                  "u64": 52
+                }
+              ]
             }
           }
         }
@@ -50140,6 +51640,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "507baded69e1b5278b9a62bd9317135cfc3f8b1177096ee23832fa746d792346"
+                },
+                {
+                  "u64": 53
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -50292,6 +51819,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "d737717dc30d9b4e707e787d638515963098f408606e2c0b0031b3b8cce8b5ed"
+                },
+                {
+                  "u64": 54
+                }
+              ]
             }
           }
         }
@@ -50464,6 +52018,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "2fb9c6fa1ef17aa79233bbc8671a45174b2d08e89ff9d529dff0233ca18fa85f"
+                },
+                {
+                  "u64": 55
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -50616,6 +52197,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "21f0a36ba8cb5979d16bdd52204e5a149d6d11e64f7ceb5a1d569e409673d8ce"
+                },
+                {
+                  "u64": 56
+                }
+              ]
             }
           }
         }
@@ -50788,6 +52396,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "939129b17acde6f574c971918f5b7c22e707136b541c5f5a15ecb00f5f9f2635"
+                },
+                {
+                  "u64": 57
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -50940,6 +52575,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "ae6d319a1e7c40725015d48a82dc0fdd8208c998a57daf9d3469e1d374d410a5"
+                },
+                {
+                  "u64": 58
+                }
+              ]
             }
           }
         }
@@ -51112,6 +52774,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "8ac3a4b2cd5675befb092a125d1199fbf9490dc0e5d2cf7b67c49be32875ea18"
+                },
+                {
+                  "u64": 59
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -51264,6 +52953,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "708e072e86dce73d045366afb3390330d44fa614ebe162e2d432b78c7392750b"
+                },
+                {
+                  "u64": 60
+                }
+              ]
             }
           }
         }
@@ -51436,6 +53152,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "d44a090e7f163f18c3df3d615176a7501f1241c3182580a968942584cd62b890"
+                },
+                {
+                  "u64": 61
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -51588,6 +53331,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "c7f1648680e6562440c25c8f7de0a4c9b69f9ff49fd710e986edbfb4b1b9a806"
+                },
+                {
+                  "u64": 62
+                }
+              ]
             }
           }
         }
@@ -51760,6 +53530,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "cbaaf0bec6116f57d6391792a6b0f74a7b2e9a07be3b843445e9c63ee5f1837a"
+                },
+                {
+                  "u64": 63
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -51912,6 +53709,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "1755a844bb20cf1bea03c78799c279845d47a7308ceec2bb90d50e38ba3ad3b2"
+                },
+                {
+                  "u64": 64
+                }
+              ]
             }
           }
         }
@@ -52084,6 +53908,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "1ac06b8fe51f77dc2dc1311a26d1582cc73bf4f667a720411d17249ea9383e18"
+                },
+                {
+                  "u64": 65
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -52236,6 +54087,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "341c898b3348127371d7e73683ef2fa2ed4f51a48641f33b4145450e70cb4716"
+                },
+                {
+                  "u64": 66
+                }
+              ]
             }
           }
         }
@@ -52408,6 +54286,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "3db568d964917871b9a4f501d03e4d5003cd183998f0fcbca3d122ae34287cbc"
+                },
+                {
+                  "u64": 67
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -52560,6 +54465,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "5f14ce8c7eb62f8fea3ba054bc3e762d5e6cf62716724e901e7e7b94ad165efb"
+                },
+                {
+                  "u64": 68
+                }
+              ]
             }
           }
         }
@@ -52732,6 +54664,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "a4759d872506039984333a770a57d9e1bfd1927f03bf6cf8f0abc1b6dc6f8b1e"
+                },
+                {
+                  "u64": 69
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -52884,6 +54843,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "94a271f4491bdff34eb29b158d86a4209cbf1efc65667cb78a4c45e5f4a70608"
+                },
+                {
+                  "u64": 70
+                }
+              ]
             }
           }
         }
@@ -53056,6 +55042,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "676b1d941f44b9a1ba34c3473b57fed780762f466c550090a7cd565fefd2a668"
+                },
+                {
+                  "u64": 71
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -53208,6 +55221,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "7aaeff1015d690f276f5f5cc709f43d1c5a950554cc3c499d2e9889399c54db8"
+                },
+                {
+                  "u64": 72
+                }
+              ]
             }
           }
         }
@@ -53380,6 +55420,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "14ada132a909f0a8e7851c85e737963a505972d32a888d622ffeccc42173930f"
+                },
+                {
+                  "u64": 73
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -53532,6 +55599,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "b29c0cb57475876f367aad8cd87b98f2651f1bcba0290377a8573940491b4bc7"
+                },
+                {
+                  "u64": 74
+                }
+              ]
             }
           }
         }
@@ -53704,6 +55798,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "f3b8a5a3215d951c6c8b81e96353028c945f279792f2bdc843cdc3c729a4f548"
+                },
+                {
+                  "u64": 75
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -53856,6 +55977,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "b346a165f201440708c9a149697fe0f9e94dc9a5d79bae677d383ab5d6aca672"
+                },
+                {
+                  "u64": 76
+                }
+              ]
             }
           }
         }
@@ -54028,6 +56176,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "0b6d9d02815cee92c600c8ec33fbedc92d150f678816a0fc52728ca7fc656ed6"
+                },
+                {
+                  "u64": 77
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -54180,6 +56355,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "d97b94114b1471576e454ee098decfae428d0a24ac09b4e616a44e3cfac576d2"
+                },
+                {
+                  "u64": 78
+                }
+              ]
             }
           }
         }
@@ -54352,6 +56554,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "772bb2cbf107e78fe589835ce0817430c62246a9c33003d17c4d8d2573cc6d24"
+                },
+                {
+                  "u64": 79
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -54504,6 +56733,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "1e69b0da09131aca932914fb15d776ddb4df5e0b18aede4b385941e5952d2e32"
+                },
+                {
+                  "u64": 80
+                }
+              ]
             }
           }
         }
@@ -54676,6 +56932,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "eba951f43e549cea1dd2c5247647823d8a4feb94c188c214f099d01c086e6e10"
+                },
+                {
+                  "u64": 81
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -54828,6 +57111,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "69da52fe53ce72f04208fbf4a25f9150097e09215ed44fba62ac632ffc386c8f"
+                },
+                {
+                  "u64": 82
+                }
+              ]
             }
           }
         }
@@ -55000,6 +57310,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "ee41d12e65197bc98773da75a928885868c4c98745e5a5082870932d35b0b226"
+                },
+                {
+                  "u64": 83
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -55152,6 +57489,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "4bbf7dee7373b636104862b5ec60e5d58d8fdf62fd9f1d89cb9e120b1ce3b17c"
+                },
+                {
+                  "u64": 84
+                }
+              ]
             }
           }
         }
@@ -55324,6 +57688,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "20a762009cc5ab0fcdd6b3224986eece535f01ade5a12a3b9efa193fc6527f51"
+                },
+                {
+                  "u64": 85
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -55476,6 +57867,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "692489fbfd24fe296c2fb2e2eb191eb457253b260f8ba02e0c2ccfa3c63d374f"
+                },
+                {
+                  "u64": 86
+                }
+              ]
             }
           }
         }
@@ -55648,6 +58066,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "e3203904519bebee6d0d87a534094fe7d9791dd22de27a79b537a5166d1bdbc9"
+                },
+                {
+                  "u64": 87
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -55800,6 +58245,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "f30e28ea88c81ba70ef6802cc43c6180a0467f6851083019b3747e1f6b47755e"
+                },
+                {
+                  "u64": 88
+                }
+              ]
             }
           }
         }
@@ -55972,6 +58444,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "6e5095f3426ed81cd845a03d803eab6fc93e0b4dcd33b774e510c8f8a642109a"
+                },
+                {
+                  "u64": 89
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -56124,6 +58623,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "4bcf8b2efcfc5f332d54f9c24b22f6869569cfe5f93f2b5542c1dff60976ae21"
+                },
+                {
+                  "u64": 90
+                }
+              ]
             }
           }
         }
@@ -56296,6 +58822,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "1439c8d473504d625f82ae48b88e9aa8a9f961b10b42f89fc6052c61802d6983"
+                },
+                {
+                  "u64": 91
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -56448,6 +59001,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "082af30fb93cacdef5ba1b70b559dd7a9039fcb8213cfc37595d2af0fdf6ad85"
+                },
+                {
+                  "u64": 92
+                }
+              ]
             }
           }
         }
@@ -56620,6 +59200,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "c8b279fc7a56e725e09e673e8abf13974cbbc97bd2f41005ac37b68c618edd64"
+                },
+                {
+                  "u64": 93
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -56772,6 +59379,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "500c74f635647e98c8cb1ebb6e5da8edd765b85acffac2b33e409248e4722599"
+                },
+                {
+                  "u64": 94
+                }
+              ]
             }
           }
         }
@@ -56944,6 +59578,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "891ac50f63e5ee734d2fc618dce3f2fab7f770268b7030d5ed278e5db0d87ec1"
+                },
+                {
+                  "u64": 95
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -57096,6 +59757,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "91580bfc6f2818b49cbfc860c887b62bdc86e248877b3121239c15a65e63440b"
+                },
+                {
+                  "u64": 96
+                }
+              ]
             }
           }
         }
@@ -57268,6 +59956,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "9088711a03e6dadfbc54b74f684bc7f8c1c8533369439e162b4c677f85c02f56"
+                },
+                {
+                  "u64": 97
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -57420,6 +60135,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "cba059da842bf77d9fd7329a563083d6e33f0a7f4ef5cbc21710e1d2b6506c23"
+                },
+                {
+                  "u64": 98
+                }
+              ]
             }
           }
         }
@@ -57592,6 +60334,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "aa1c1acec798916e1a33425c66ff664c5123c571202e239f9310f58a6ac63857"
+                },
+                {
+                  "u64": 99
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -57744,6 +60513,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "7dcb347f62250261b98b61e14f59c5a7973d27c5386322320e2a109f5570b458"
+                },
+                {
+                  "u64": 100
+                }
+              ]
             }
           }
         }
@@ -57916,6 +60712,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "9efaed7e7af34929be8f095ea483938a4b46312eb60ba8a07d846002307a73ba"
+                },
+                {
+                  "u64": 101
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -58068,6 +60891,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "5fa39557c4b4e4206162b0963594ea4716e9eef4deab64945a4305b98de76068"
+                },
+                {
+                  "u64": 102
+                }
+              ]
             }
           }
         }
@@ -58240,6 +61090,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "225efb2b20ebc814b14cae3128f649fdbaa0cfb0ebbc68d52164e638561706c2"
+                },
+                {
+                  "u64": 103
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -58392,6 +61269,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "4fba792869f461b56e3276b789f4e6e263834d33caa0b7b4076d67b5ff147705"
+                },
+                {
+                  "u64": 104
+                }
+              ]
             }
           }
         }
@@ -58564,6 +61468,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "abf787483925d0fefb69ba0ccfc7c0ed6e8098a65f868392e56ecfafb51a2d86"
+                },
+                {
+                  "u64": 105
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -58716,6 +61647,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "5589cbd43b8720e2e77aaefed0ad6ac207c4bfa2b9543981ef80a6b1729190c1"
+                },
+                {
+                  "u64": 106
+                }
+              ]
             }
           }
         }
@@ -58888,6 +61846,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "e10bc2c94a839dc13b660f1cad6618391910fb7fef63d2d759d05848483ed442"
+                },
+                {
+                  "u64": 107
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -59040,6 +62025,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "a58325d6911867a1f8ab9c57896b39d3e7c1b1f812ed21778eb8ff15e0845236"
+                },
+                {
+                  "u64": 108
+                }
+              ]
             }
           }
         }
@@ -59212,6 +62224,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "bbbe0b24208664694914981333c7876fa91761ea7f113e9ba8a090429f4596c9"
+                },
+                {
+                  "u64": 109
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -59364,6 +62403,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "5708adaba55c0d2a982665d53f0fb6e3c655607cc3c88bb089af0ded88cc9fd6"
+                },
+                {
+                  "u64": 110
+                }
+              ]
             }
           }
         }
@@ -59536,6 +62602,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "38b29e42206f01a096421982bee9d5532515cfa8606e104ac25da79d8dff5e78"
+                },
+                {
+                  "u64": 111
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -59688,6 +62781,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "8bd37c501c04ab350e0ad6ebe17efd5410da11355301efadbc26156cd7186f4d"
+                },
+                {
+                  "u64": 112
+                }
+              ]
             }
           }
         }
@@ -59860,6 +62980,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "1688277ae409142bfb861700f0f5ccc20387b9312b4841bcd4700b81caaaf8bb"
+                },
+                {
+                  "u64": 113
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -60012,6 +63159,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "73b7af5dfe38f11d60642ee9f5fcf083e1d9f971aab5b289617916b45989334e"
+                },
+                {
+                  "u64": 114
+                }
+              ]
             }
           }
         }
@@ -60184,6 +63358,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "51e8544bdd43a7da62384e5533f1d7c44bd47b1aef438f51eb177aab7681f707"
+                },
+                {
+                  "u64": 115
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -60336,6 +63537,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "b49027f1deb41335ba32e87336386964aab36e34312eb9c772a0bf092074a8ef"
+                },
+                {
+                  "u64": 116
+                }
+              ]
             }
           }
         }
@@ -60508,6 +63736,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "2ac6ff710d16016e7bbd1e1703593dd121876915f5b66d3414b294111d91485b"
+                },
+                {
+                  "u64": 117
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -60660,6 +63915,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "483d71a35cadbc18ae30daca5e12ca67490904f97a7a28070f5263a717d57ec3"
+                },
+                {
+                  "u64": 118
+                }
+              ]
             }
           }
         }
@@ -60832,6 +64114,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "03da856c673b36fb777c373412a549ed87020d16dd06b7137a8017397960e055"
+                },
+                {
+                  "u64": 119
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -60984,6 +64293,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "337c10aa1f76f4c98ee538ff1ad96d0100e4bb6200be608602fa9762486ea5f3"
+                },
+                {
+                  "u64": 120
+                }
+              ]
             }
           }
         }
@@ -61156,6 +64492,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "222532ceeb515e40affb7a3780c7e2bfcddcec868b0cf49ab4ad47eaf7ea14f9"
+                },
+                {
+                  "u64": 121
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -61308,6 +64671,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "6b2d387327711c841f79793049cfd870ffd1124668d9a25b2fab1cc4100ce9f6"
+                },
+                {
+                  "u64": 122
+                }
+              ]
             }
           }
         }
@@ -61480,6 +64870,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "0097c7d5b1c48b476367a751ceb59f0d7c8949b1839c9654ba71927bf5c4fb93"
+                },
+                {
+                  "u64": 123
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -61632,6 +65049,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "40056f61e4409807f60690b6ce7060de37f12a00222bbb517e729df72671e628"
+                },
+                {
+                  "u64": 124
+                }
+              ]
             }
           }
         }
@@ -61804,6 +65248,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "8ef9441841c08c3747b6724afff9906229c620895ad42c703858a9e55d73696c"
+                },
+                {
+                  "u64": 125
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -61956,6 +65427,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "8bbe6f7bd83fe67d64c673dd1809377e568a32c7ead6dadfb7f190147b5de62d"
+                },
+                {
+                  "u64": 126
+                }
+              ]
             }
           }
         }
@@ -62128,6 +65626,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "adcefbf888c5da625715d8aa134e162a542ea6475ffc8a5761e5f9d06de32206"
+                },
+                {
+                  "u64": 127
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -62280,6 +65805,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "1f8d8f496722e34d7f200e3792e24695e5e82a2dec4ead8b4b54e91edae83f7f"
+                },
+                {
+                  "u64": 128
+                }
+              ]
             }
           }
         }
@@ -62452,6 +66004,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "fe2bae446d3bf3480afb7f79fc77629b33aba910443e685ce7f2c432f899ecaa"
+                },
+                {
+                  "u64": 129
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -62604,6 +66183,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "9a465aeaf5f8895b117ead302378fe013f0ae4811319fe73105f2f52134ec3ce"
+                },
+                {
+                  "u64": 130
+                }
+              ]
             }
           }
         }
@@ -62776,6 +66382,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "aee0ca254e11851e424d0ae9c11629a7af7156c70783b02c8aa932eca9e10de6"
+                },
+                {
+                  "u64": 131
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -62928,6 +66561,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "3f1581b8d2d6b6ae8d69c554a4c197d49ff8aabbb18ecc8b261efe0596130776"
+                },
+                {
+                  "u64": 132
+                }
+              ]
             }
           }
         }
@@ -63100,6 +66760,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "b9bed5db567aebe43af8ced46c1181e9fffea677e32f6d7c7e61360191792464"
+                },
+                {
+                  "u64": 133
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -63252,6 +66939,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "973648f4e890dac80a47883c4335464c7a061d31bfb67c7a1f4773f8ffcaa7e0"
+                },
+                {
+                  "u64": 134
+                }
+              ]
             }
           }
         }
@@ -63424,6 +67138,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "42a285dd2b40b64e68711aecdbb2dfac6ecf4b305f29e6fee186da53573c4790"
+                },
+                {
+                  "u64": 135
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -63576,6 +67317,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "a484af1ee771b0431971810247b8bb79af4843f54233e28357fab640fd06dbd1"
+                },
+                {
+                  "u64": 136
+                }
+              ]
             }
           }
         }
@@ -63748,6 +67516,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "c0b480e0876f9c819160f3d7a342ce7f624fe3d41895d6433b6a3c21f603376f"
+                },
+                {
+                  "u64": 137
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -63900,6 +67695,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "3e58974d2c75606f91c77a1134285f512400833e390887a1ff0a133cdf3b8fb7"
+                },
+                {
+                  "u64": 138
+                }
+              ]
             }
           }
         }
@@ -64072,6 +67894,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "4b2ea93f889d08f84c31084e2f1fa0bd7332742a5fd84950d86f478c5660d046"
+                },
+                {
+                  "u64": 139
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -64224,6 +68073,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "faa085fca5bda4b462f2d3368376a0add88a2fc91d57621b089840b58dc9f01f"
+                },
+                {
+                  "u64": 140
+                }
+              ]
             }
           }
         }
@@ -64396,6 +68272,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "b51315c7f243fe3b384d7940df69035d273516062a85541eb3eeb0c933a8d945"
+                },
+                {
+                  "u64": 141
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -64548,6 +68451,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "ccf36acb51935a034f2c5c7b9b743f831d546391ca6ec77039b264ede4531f98"
+                },
+                {
+                  "u64": 142
+                }
+              ]
             }
           }
         }
@@ -64720,6 +68650,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "b1c7788435a32315eeddd03ce05ca55e4c4b33bc7ad5f9e49469e623727cdc05"
+                },
+                {
+                  "u64": 143
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -64872,6 +68829,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "edf6e74afff633b11227886c581c5f4ce6cce90ba1f3c0c2ae6d1ad03f540608"
+                },
+                {
+                  "u64": 144
+                }
+              ]
             }
           }
         }
@@ -65044,6 +69028,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "9d6312813f43be026e11f56defc8892d28edb336d8fb0abf3513e03e39eae030"
+                },
+                {
+                  "u64": 145
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -65196,6 +69207,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "4c5b711546e81853394dab0522858afd8e6235b66b1c04ea5d5154ab9cf8bb32"
+                },
+                {
+                  "u64": 146
+                }
+              ]
             }
           }
         }
@@ -65368,6 +69406,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "0562663210cb65c1ef9b26934a0e83f17309529298f4493d024c50e7a5531004"
+                },
+                {
+                  "u64": 147
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -65520,6 +69585,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "7f0fe7d1e3ee9e3b71129b7e163d3dfae53ac9476915019cb33caaf3d413659d"
+                },
+                {
+                  "u64": 148
+                }
+              ]
             }
           }
         }
@@ -65692,6 +69784,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "897f12f94164b04044275155da3802448b501bcb6a3bc3c488a950a506fee90b"
+                },
+                {
+                  "u64": 149
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -65844,6 +69963,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "75a7ee57c210cc4c5a4426c8adb5889b3696de81cb9951011c036eea193de00e"
+                },
+                {
+                  "u64": 150
+                }
+              ]
             }
           }
         }
@@ -66016,6 +70162,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "da37b7bcc25266645d1fc98a77b646dd7978f5f4b6d33d3acd8e95a4e91c496a"
+                },
+                {
+                  "u64": 151
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -66168,6 +70341,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "e04b192fd7c6014b11cd90065448eae832acf5bcf656e7d9a59b261adc4ba124"
+                },
+                {
+                  "u64": 152
+                }
+              ]
             }
           }
         }
@@ -66340,6 +70540,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "34b5039fb0c65cc0e099da8cb66be6e0ea637364d4453bbdd80f90204169f4fc"
+                },
+                {
+                  "u64": 153
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -66492,6 +70719,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "0296e5c031c161adafec40e28ae0761ecd8c26caf0301b72b5685e8f3202dd7d"
+                },
+                {
+                  "u64": 154
+                }
+              ]
             }
           }
         }
@@ -66664,6 +70918,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "7d7c67ed30cfabbd58e826786c89db7b4f1c557cb99122cf916f549384fdce19"
+                },
+                {
+                  "u64": 155
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -66816,6 +71097,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "7c893b9dd9fc55cc853279858183c029475432712c33fa3b76715caefe95639f"
+                },
+                {
+                  "u64": 156
+                }
+              ]
             }
           }
         }
@@ -66988,6 +71296,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "2780ba72a8bc649bb112d0bfac7441ca2de48430c847e274948b3830c48b741b"
+                },
+                {
+                  "u64": 157
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -67140,6 +71475,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "33022d9d3486a1d5163fe0cfb2ced90e2fba9ee096e72f82b7a889934a49b5e6"
+                },
+                {
+                  "u64": 158
+                }
+              ]
             }
           }
         }
@@ -67312,6 +71674,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "d5617458b844fd2b31cd81451cdd36b5f014f36af1c3fc8f67159240a46c3403"
+                },
+                {
+                  "u64": 159
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -67464,6 +71853,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "18f91b646626b1a7821d12b8238fb482abf821457125f7151d9aee6399999583"
+                },
+                {
+                  "u64": 160
+                }
+              ]
             }
           }
         }
@@ -67636,6 +72052,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "8db1edf4cff812f437dd1e1cc4cb3e1dadf6dc0011f3438ab25af4513ebf0340"
+                },
+                {
+                  "u64": 161
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -67788,6 +72231,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "1354dc20fcd393153ac398d74b9f14849f8df51a556a31e82f53f051752ccacb"
+                },
+                {
+                  "u64": 162
+                }
+              ]
             }
           }
         }
@@ -67960,6 +72430,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "daa9cbfb28f1709c35b69a658010a86d2522c301dc7d8a1ab450203dab60d81c"
+                },
+                {
+                  "u64": 163
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -68112,6 +72609,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "329e39e891f41c1270da068dc8ae24b573a684c7a8f8bf51526dbec06762a910"
+                },
+                {
+                  "u64": 164
+                }
+              ]
             }
           }
         }
@@ -68284,6 +72808,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "b0becd7b08f1ac104c543016f64c016be0dd8454c664d8e198d0fc679f18f003"
+                },
+                {
+                  "u64": 165
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -68436,6 +72987,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "5a2c55564b976ecc036c94d994a84bcc7ba16b7f69f486e292311bfe0e11a415"
+                },
+                {
+                  "u64": 166
+                }
+              ]
             }
           }
         }
@@ -68608,6 +73186,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "b1f21bb6f81fb3e1399d33d46205c2c9a9ce34b14b360903cccd6d90d5181115"
+                },
+                {
+                  "u64": 167
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -68760,6 +73365,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "da1760e26e1d36f34a8856562dc60752bc13e595386b7087667575771f839fa8"
+                },
+                {
+                  "u64": 168
+                }
+              ]
             }
           }
         }
@@ -68932,6 +73564,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "fc8ddbf4dd96ad6fdfe9b7a60db47a814428d5aea7a87b5066957945ca0a0785"
+                },
+                {
+                  "u64": 169
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -69084,6 +73743,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "78554e29e51a528fe92468d3a23f767a177860e94757c272cf5598d3fa89e5e6"
+                },
+                {
+                  "u64": 170
+                }
+              ]
             }
           }
         }
@@ -69256,6 +73942,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "2fd925f19a7b6bfba32786643f61df4bc4debcdc621c8e67366c6fcb6c48a0c6"
+                },
+                {
+                  "u64": 171
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -69408,6 +74121,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "5f6cd02facf1cdf6dfea3d578526b51871e273f393c694226f2f557d1e551ec6"
+                },
+                {
+                  "u64": 172
+                }
+              ]
             }
           }
         }
@@ -69580,6 +74320,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "24ba8f77c71837cf86c88cf2198d3b7eef2963a80e714283ee664f3942c7136d"
+                },
+                {
+                  "u64": 173
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -69732,6 +74499,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "a53426d5976008558367d1a497d382b73c18bce2da324fcbbff9efb930cc75bf"
+                },
+                {
+                  "u64": 174
+                }
+              ]
             }
           }
         }
@@ -69904,6 +74698,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "3d42d90cb33a7f5d3201f671c534a3d4af3a2920b8f00f09cd2e702643a030ce"
+                },
+                {
+                  "u64": 175
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -70056,6 +74877,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "30b05b7d9618bdd20212fc6328166d0cbaadcf041983823197d414f75e3a8c6e"
+                },
+                {
+                  "u64": 176
+                }
+              ]
             }
           }
         }
@@ -70228,6 +75076,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "ade8c82b5daed792c476ca856b0cbe546a82837fdb8c66b1cf3bf6f6e76f478c"
+                },
+                {
+                  "u64": 177
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -70380,6 +75255,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "09b70182aaa6fe01b65b3aedf75bd2bc7a9d7116fed96bd614e0a539c7c173ba"
+                },
+                {
+                  "u64": 178
+                }
+              ]
             }
           }
         }
@@ -70552,6 +75454,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "c9374123a9352ac8388a1735b366721cb20bc36dac791941eedbea5d5ae93ad1"
+                },
+                {
+                  "u64": 179
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -70704,6 +75633,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "b3e10b6a974437d861e0b4b5cc2ff5f04fa32e4b9ba44136ff6b46dd9098cd03"
+                },
+                {
+                  "u64": 180
+                }
+              ]
             }
           }
         }
@@ -70876,6 +75832,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "0f84e61e2b0ccbee0e4b5af114459c86052ba64f289501575cd3ac3874a2dba5"
+                },
+                {
+                  "u64": 181
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -71028,6 +76011,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "de2f300a7e6ec0505452d99bdc59bd69693f9887d6eb626acabbc048fe66648b"
+                },
+                {
+                  "u64": 182
+                }
+              ]
             }
           }
         }
@@ -71200,6 +76210,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "32191913953ae7200f98826f9b749d1e79c9a295c5317b93ad36766c5581bcb8"
+                },
+                {
+                  "u64": 183
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -71352,6 +76389,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "a270073296657a24a6fa2719ab344cbd6a579da96e8a43a2f64f438a0914cc9b"
+                },
+                {
+                  "u64": 184
+                }
+              ]
             }
           }
         }
@@ -71524,6 +76588,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "6e197c787046242a230f6802d0b73f05d3af0975d8c31ba96b4dc9c167c21abe"
+                },
+                {
+                  "u64": 185
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -71676,6 +76767,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "3a6de021fe608fd2dd10b84ff84d20a25b15e0453f78ece67b004d9e572c37ce"
+                },
+                {
+                  "u64": 186
+                }
+              ]
             }
           }
         }
@@ -71848,6 +76966,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "a4214a11ba1aab8d4bc51808c4adf59ea741bc3a2f56de1d5dd92929148bc91d"
+                },
+                {
+                  "u64": 187
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -72000,6 +77145,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "351a951b2c842c6826dc10e651b5cb8b9a9556435cdff518f8478278a6a7e823"
+                },
+                {
+                  "u64": 188
+                }
+              ]
             }
           }
         }
@@ -72172,6 +77344,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "11899a5ef0fb40c6b0aabede054e59da12be9c80f09d46e9493b102e0e7c149c"
+                },
+                {
+                  "u64": 189
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -72324,6 +77523,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "5225bfb51e3d13a045af65363fefc7e6ee7a708b9e0c661562e2c9eae77087a2"
+                },
+                {
+                  "u64": 190
+                }
+              ]
             }
           }
         }
@@ -72496,6 +77722,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "f2e1e630be69566e7b17c80eeffa43e7674d2ab3a51c67b2783f74661ac19f8b"
+                },
+                {
+                  "u64": 191
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -72648,6 +77901,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "3d738ea6d42a4a2639cde2c2e36017b71b19dec61cd18e22b95fd2cc20311fdd"
+                },
+                {
+                  "u64": 192
+                }
+              ]
             }
           }
         }
@@ -72820,6 +78100,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "f17463bcbb3d716b214291b6494689af61535a76a32bbbe25e08fd534bc51867"
+                },
+                {
+                  "u64": 193
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -72972,6 +78279,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "17499ee6ca01d16d7a46424d1664903152ef69676528119f92a8d81c68dd8241"
+                },
+                {
+                  "u64": 194
+                }
+              ]
             }
           }
         }
@@ -73144,6 +78478,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "60b7bc79ad50082fb7350f6611c0150f3cae3e944d94ef4e3e33b58c7b8f59c5"
+                },
+                {
+                  "u64": 195
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -73296,6 +78657,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "9f1d58e75f5d128007d1b54761db19c2a6bbd8a76c0aea1f6c13f51a342133a8"
+                },
+                {
+                  "u64": 196
+                }
+              ]
             }
           }
         }
@@ -73468,6 +78856,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "81a861088209d3b3ed3ccf4c14afdb00153ab12236897d558ffc16554f424a1f"
+                },
+                {
+                  "u64": 197
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -73620,6 +79035,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "8801c004f75853a1b62ddb42b70f9529863a524828df62ba174b5afe1179466e"
+                },
+                {
+                  "u64": 198
+                }
+              ]
             }
           }
         }
@@ -73792,6 +79234,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "c202c56f8f999b9af342a642df58f064c8a7324ca49455c0504b781b8ec744f4"
+                },
+                {
+                  "u64": 199
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -73954,6 +79423,33 @@
       "event": {
         "ext": "v0",
         "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "3586237d33915b0fb261f65f0783efb4f89d5f65202b9fb1d8fdb53e38c02744"
+                },
+                {
+                  "u64": 200
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
         "type_": "diagnostic",
         "body": {
           "v0": {
@@ -74106,6 +79602,33 @@
             ],
             "data": {
               "string": "bench event"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "contract",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "mmr_root"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "bytes": "0a0701c336f7ba35509f7052b564837912eaa60a850957792ebe70891ea46b1f"
+                },
+                {
+                  "u64": 201
+                }
+              ]
             }
           }
         }

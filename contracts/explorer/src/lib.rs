@@ -414,7 +414,7 @@ impl ExplorerContract {
         } else {
             max_events
         };
-        if cap < MIN_MAX_EVENTS || cap > MAX_MAX_EVENTS {
+        if !(MIN_MAX_EVENTS..=MAX_MAX_EVENTS).contains(&cap) {
             panic_with_error!(&env, Error::InvalidInput);
         }
         env.storage().instance().set(&DataKey::Admin, &admin);
@@ -1028,6 +1028,7 @@ impl ExplorerContract {
         let next = state::reserve_seqs(seq, 1).unwrap_or_else(|e| panic_with_error!(&env, e));
         Self::store_event(&env, seq, max, input);
         env.storage().instance().set(&DataKey::EventSeq, &next);
+        Self::emit_mmr_root(&env);
     }
 
     /// Submit a batch of decoded events in one invocation (admin only).
@@ -1085,10 +1086,20 @@ impl ExplorerContract {
             seqs.push_back(seq);
         }
         env.storage().instance().set(&DataKey::EventSeq, &next);
+        Self::emit_mmr_root(&env);
 
         env.events()
             .publish((symbol_short!("ev_batch"),), (first, count));
         seqs
+    }
+
+    /// Publishes the current MMR root and leaf count. Called once per
+    /// `submit_event` / `submit_events` invocation rather than per event, so a
+    /// batch pays for one root computation.
+    fn emit_mmr_root(env: &Env) {
+        let (root, count) = mmr::root(env);
+        env.events()
+            .publish((symbol_short!("mmr_root"),), (root, count));
     }
 
     /// Writes one event into its ring-buffer slot and emits the per-event
@@ -1112,6 +1123,8 @@ impl ExplorerContract {
             PERSISTENT_TTL_THRESHOLD,
             PERSISTENT_TTL_EXTEND_TO,
         );
+        let leaf = mmr::event_leaf(env, &event);
+        mmr::append(env, &leaf);
 
         env.events().publish(
             (
@@ -1430,9 +1443,9 @@ mod tests {
     fn test_submit_events_crossing_max_events_reverts() {
         let (env, client) = setup();
         let admin = Address::generate(&env);
-        client.init(&admin, &5u32);
+        client.init(&admin, &MIN_MAX_EVENTS);
         assert!(client
-            .try_submit_events(&admin, &batch_of(&env, 6))
+            .try_submit_events(&admin, &batch_of(&env, MAX_BATCH + 1))
             .is_err());
         assert_eq!(client.event_count(), 0);
     }
@@ -1834,24 +1847,27 @@ mod tests {
     fn test_ring_buffer_wraps_correctly() {
         let (env, client) = setup();
         let admin = Address::generate(&env);
-        client.init(&admin, &5u32);
+        client.init(&admin, &MIN_MAX_EVENTS);
+        env.budget().reset_unlimited();
         let cid: BytesN<32> = BytesN::from_array(&env, &[10u8; 32]);
         let base = make_input(&env, &cid);
+        let cap = MIN_MAX_EVENTS as u64;
 
-        for _ in 0..5 {
+        for _ in 0..MIN_MAX_EVENTS {
             client.submit_event(&admin, &base);
         }
-        assert_eq!(client.event_count(), 5u64);
+        assert_eq!(client.event_count(), cap);
 
         for _ in 0..10 {
             client.submit_event(&admin, &base);
         }
-        assert_eq!(client.event_count(), 5u64);
+        assert_eq!(client.event_count(), cap);
 
+        // The 10 oldest entries were evicted, so the window starts at seq 10.
         let evs = client.get_events(&0u64, &20u32);
-        assert_eq!(evs.len(), 5);
+        assert_eq!(evs.len(), 20);
         assert_eq!(evs.get(0).unwrap().seq, 10);
-        assert_eq!(evs.get(4).unwrap().seq, 14);
+        assert_eq!(evs.get(19).unwrap().seq, 29);
     }
 
     #[test]
@@ -1957,11 +1973,12 @@ mod tests {
     fn test_cap_hit_event_emitted_on_eviction() {
         let (env, client) = setup();
         let admin = Address::generate(&env);
-        client.init(&admin, &5u32);
+        client.init(&admin, &MIN_MAX_EVENTS);
+        env.budget().reset_unlimited();
         let cid: BytesN<32> = BytesN::from_array(&env, &[23u8; 32]);
         let base = make_input(&env, &cid);
 
-        for _ in 0..5 {
+        for _ in 0..MIN_MAX_EVENTS {
             client.submit_event(&admin, &base);
         }
         let before = env.events().all().len();
@@ -2154,7 +2171,7 @@ mod tests {
     }
 
     #[test]
-    fn test_moderator_can_deregister_but_cannot_pause() {
+    fn test_moderator_cannot_deregister_or_pause() {
         let env = Env::default();
         env.mock_all_auths();
         let id = env.register_contract(None, ExplorerContract);
@@ -2166,8 +2183,10 @@ mod tests {
         client.init(&admin, &1000u32);
         client.grant_role(&admin, &moderator, &Role::Moderator);
         client.register_contract(&admin, &cid, &make_meta(&env, "Moderated", &admin));
-        client.deregister_contract(&moderator, &cid);
-        assert!(client.get_latest_contract(&cid).is_none());
+        // Deregistration is limited to the admin and the entry owner (I1), so a
+        // moderator role does not grant it. The entry must survive the attempt.
+        assert!(client.try_deregister_contract(&moderator, &cid).is_err());
+        assert!(client.get_latest_contract(&cid).is_some());
         assert!(client.try_pause(&moderator).is_err());
     }
 

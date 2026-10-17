@@ -66,6 +66,7 @@ mod storage_bench {
             let admin = Address::generate(&env);
             client.init(&admin, &0u32);
 
+            env.budget().reset_unlimited();
             fill(&client, &admin, &env, n);
 
             // Benchmark submit_event
