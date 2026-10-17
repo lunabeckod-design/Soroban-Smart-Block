@@ -489,7 +489,7 @@ impl ExplorerContract {
             .instance()
             .set(&DataKey::Role(account.clone()), &role);
         env.events()
-            .publish((symbol_short!("role_grant"), account), role);
+            .publish((symbol_short!("role_add"), account), role);
     }
 
     /// Revoke all delegated privileges from an account.
@@ -497,7 +497,7 @@ impl ExplorerContract {
         Self::bump_instance_ttl(&env);
         Self::require_admin(&env, &caller);
         env.storage().instance().remove(&DataKey::Role(account.clone()));
-        env.events().publish((symbol_short!("role_revoke"),), account);
+        env.events().publish((symbol_short!("role_del"),), account);
     }
 
     /// Return the delegated role assigned to an account, if any.
