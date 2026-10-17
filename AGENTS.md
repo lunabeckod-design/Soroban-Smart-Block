@@ -29,7 +29,7 @@ contracts/
 
 indexer/
   src/               Node.js source — api.js is the Express server, index.js is the daemon
-  migrations/        SQL migration files (numbered, applied by migrate.js at startup)
+  migrations/        Numbered .sql migration files (applied by migrate.js at startup)
   test/              Node.js unit tests (node:test runner)
 
 frontend/
@@ -70,9 +70,9 @@ e2e/
 ## Architecture rules to preserve
 
 - **`indexer/src/db.js`** is the single database module. Do not create a `db/` subdirectory or split it — a split was attempted before and abandoned.
-- **`indexer/src/api.js`** owns all HTTP route definitions. The only exception is `indexer/src/routes/admin.js`, which holds auth-gated admin routes and is imported by `api.js`. Do not add more files to `routes/`.
+- **`indexer/src/api.js`** owns all HTTP route definitions. The exceptions are the three modules in `indexer/src/routes/`, all imported by `api.js`: `admin.js` (auth-gated admin routes), `webhooks.js`, and `dashboard.js`. Do not add more files to `routes/`.
 - Every new page in `frontend/src/pages/` must have a corresponding `<Route>` in [frontend/src/App.tsx](frontend/src/App.tsx).
-- SQL changes belong in a new numbered migration file under `indexer/migrations/`, applied automatically by `db.init()` at startup.
+- SQL changes belong in a new numbered `.sql` migration file under `indexer/migrations/`, applied automatically by `db.init()` at startup. Only `.sql` files are applied; the `.js` files in that directory are not run by the migration runner.
 - The Cargo workspace (`Cargo.toml` at the root) only includes `contracts/explorer`. The `contracts/ticket` crate is independent and tested separately.
 
 ---
@@ -103,8 +103,10 @@ cd contracts/ticket && cargo test --features testutils --release
 
 ### Indexer (required if you touched indexer/)
 ```bash
-cd indexer && npm test
+cd indexer && npm run test:coverage   # what CI runs
 ```
+
+`npm test` runs a broader suite that needs a running Postgres (`TEST_DATABASE_URL`). Run it locally only when you have that database.
 
 ### Frontend (required if you touched frontend/)
 ```bash
