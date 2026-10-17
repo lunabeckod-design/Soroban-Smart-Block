@@ -12,7 +12,7 @@
 #![cfg(test)]
 
 use super::*;
-use soroban_sdk::{testutils::{Address as _, StellarAsset}, token, Env, String};
+use soroban_sdk::{testutils::Address as _, token, Env, String};
 
 // ─── helpers ─────────────────────────────────────────────────────────────────
 
@@ -153,10 +153,18 @@ mod budget {
         let client = TicketContractClient::new(&env, &id);
         let organizer = Address::generate(&env);
         let name = String::from_str(&env, "Budget Live");
+        let payment_token = Address::generate(&env);
         rows.push((
             "initialize",
             measure(&env, || {
-                client.initialize(&organizer, &name, &100u64, &50i128, &75i128)
+                client.initialize(
+                    &organizer,
+                    &payment_token,
+                    &name,
+                    &100u64,
+                    &50i128,
+                    &75i128,
+                )
             }),
         ));
 
